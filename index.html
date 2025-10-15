@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andiswa • Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Home">Andiswa</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle menu</span>
+      ☰
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#about" class="nav-link">
+        <span class="nav-title">About</span>
+        <span class="nav-subtitle">Who I am</span>
+      </a>
+      <a href="#projects" class="nav-link">
+        <span class="nav-title">Projects</span>
+        <span class="nav-subtitle">Work & code</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="nav-title">Contact</span>
+        <span class="nav-subtitle">Say hello</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <div class="banner-overlay">
+      <h1>Welcome to My Portfolio</h1>
+    </div>
+  </section>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Hi, I’m <span class="accent">Andiswa</span> — Data & AI enthusiast</h1>
+      <p class="lead">
+        I build data-powered solutions and love turning ideas into useful products.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#about" class="btn btn-ghost">About Me</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About</h2>
+
+      <article class="card">
+        <h3>About me</h3>
+        <p>
+          I am a dedicated Data Scientist with a strong background in applying advanced analytics,
+          machine learning, and data visualization to solve real-world problems in the development space.
+          My experience spans working on impactful projects that leverage predictive modeling,
+          data engineering, and AI solutions to support evidence-based decision-making.
+          I have demonstrated expertise in building end-to-end data solutions—from data cleaning and
+          feature engineering to deploying models—using tools such as Python, SQL, Power BI, and cloud-based
+          technologies. With a strong understanding of sustainable development priorities,
+          I combine technical expertise with a purpose-driven mindset to build data solutions that contribute
+          to real, positive change.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Skills</h3>
+        <ul class="tags">
+          <li>Python</li><li>SQL</li><li>Pandas</li><li>Scikit-learn</li>
+          <li>PyTorch</li><li>TensorFlow</li><li>LLM</li>
+          <li>Data Viz</li><li>Data Visualization</li><li>Advanced Excel</li><li>Power BI</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Aspirations</h3>
+        <p>
+          I’m aiming for roles that blend AI, data, and product thinking—where I can
+          prototype fast, communicate clearly, and ship features that help people.
+        </p>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Projects</h2>
+      <p class="muted">A few highlights. Each card links to the GitHub code.</p>
+
+      <div id="projects-grid" class="grid" aria-live="polite">
+        <!-- Filled by script.js from PROJECTS data -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
+      <p>
+        Want to collaborate or just say hi? Reach me on
+        <a href="mailto:nyongwanaa@gmail.com">nyongwanaa@gmail.com</a> or connect on
+        <a href="https://github.com/AndiswaNyo" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Andiswa. All rights reserved.</small>
+  </footer>
+
+  <!-- Accessibility helper -->
+  <span class="sr-only" id="top"></span>
+</body>
+</html>
